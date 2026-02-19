@@ -3,7 +3,6 @@ package com.argus.test;
 import com.argus.test.model.dto.NotificationPayLoadDto;
 import com.argus.test.model.dto.TaskRequestDto;
 import com.argus.test.model.dto.TaskResponseDto;
-import com.argus.test.model.enums.TaskType;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,7 +17,8 @@ import java.util.UUID;
 
 import static org.hamcrest.Matchers.is;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 @SpringBootTest
 @AutoConfigureMockMvc
