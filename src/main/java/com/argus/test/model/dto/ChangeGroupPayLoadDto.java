@@ -1,7 +1,6 @@
 package com.argus.test.model.dto;
 
 import com.argus.test.model.enums.TaskType;
-import com.fasterxml.jackson.annotation.JsonTypeName;
 import lombok.Getter;
 import lombok.Setter;
 
